@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="css/loginPage.css">
+    </head>
+    <body>
+        <div id="authContainer">
+            <h2>ChatWeb Giris</h2>
+
+            <!-- Kullanıcı Kayıt Formu -->
+            <form action="../public/php/register.php" method="post" id="registerForm">
+                <h3>Kayit Ol</h3>
+                <input type="text" name="ad" placeholder="Ad" required>
+                <input type="text" name="soyad" placeholder="Soyad" required>
+                <input type="text" name="kullanici_adi" placeholder="Kullanici Adi" required>
+                <input type="password" name="sifre" placeholder="Sifre" required>
+                <button type="submit">Kayit Ol</button>
+            </form>
+
+            <!-- Kullanıcı Giriş Formu -->
+            <form action="../public/php/login.php" method="post" id="loginForm">
+                <h3>Giris Yap</h3>
+                <input type="text" name="kullanici_adi" placeholder="Kullanici Adi" required>
+                <input type="password" name="sifre" placeholder="Sifre" required>
+                <button type="submit">Giris Yap</button>
+            </form>
+
+            <!-- Çıkış Butonu -->
+            <form action="../public/php/logout.php" method="post" id="logoutForm" style="display: none;">
+                <button type="submit">Cikis Yap</button>
+            </form>
+        </div>
+    </body>
+</html>
